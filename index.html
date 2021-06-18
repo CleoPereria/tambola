@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housie</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: #E2EAFF;
+        }
+
+        .col{
+            
+            font-size: 26px;
+            font-weight: 700;
+            cursor:pointer;
+            background-color: #e2fff0a8;
+            color: #CE6E9C;
+        }
+
+            
+
+        h1{
+            color: #2B4991;
+        }
+
+        .active{
+
+        background-color: #F8B30D !important;
+        color: #22242b !important;
+        border: 3px solid #2B4991 !important;
+        }
+
+        .square {
+            width: 100%;
+            height: 4rem;
+            padding: 0px !important;
+            color: #CE6E9C;
+            font-size: 26px;
+            font-weight: 700;
+            background: transparent;
+            border: 2px solid #75C2CC;
+            border-radius: 0%;
+        }
+
+        .reset{
+            margin-top: -4.5rem;
+            margin-left: 3rem;
+            cursor: pointer;
+        }
+
+        .w-10{
+            width: 12%;
+        }
+    </style>
+
+
+</head>
+<body>
+    <section>
+        <div class="container pt-3 text-center">
+            <h1 class="font-weight-bold">Parish Game Night</h1>
+        </div>
+    </section>
+    <section>
+        <div class="container py-2 ">
+            <div class="row mx-auto text-center ">
+               <div class="col px-0" ><button class="square btn  stretched-link " value="1"  id="1" onclick="checkNum(event)">1</button></div>
+               <div class="col px-0" ><button class="square btn  stretched-link " value="2"  id="2" onclick="checkNum(event)">2</button></div>
+               <div class="col px-0" ><button class="square btn  stretched-link " value="3"  id="3" onclick="checkNum(event)">3</button></div>
+               <div class="col px-0" ><button class="square btn  stretched-link " value="4"  id="4" onclick="checkNum(event)">4</button></div>
+               <div class="col px-0" ><button class="square btn  stretched-link " value="5"  id="5" onclick="checkNum(event)">5</button></div>
+               <div class="col px-0" ><button class="square btn  stretched-link " value="6"  id="6" onclick="checkNum(event)">6</button></div>
+               <div class="col px-0" ><button class="square btn  stretched-link " value="7"  id="7" onclick="checkNum(event)">7</button></div>
+               <div class="col px-0" ><button class="square btn  stretched-link " value="8"  id="8" onclick="checkNum(event)">8</button></div>
+               <div class="col px-0" ><button class="square btn  stretched-link " value="9"  id="9" onclick="checkNum(event)">9</button></div>
+               <div class="col px-0" ><button class="square btn  stretched-link " value="10" id="10" onclick="checkNum(event)">10</button></div>
+            </div>
+     
+        <div class="row mx-auto text-center ">
+            <div class="col px-0" ><button class="square btn  stretched-link " value="11" id="11" onclick="checkNum(event)">11</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link " value="12" id="12" onclick="checkNum(event)">12</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link " value="13" id="13" onclick="checkNum(event)">13</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link " value="14" id="14" onclick="checkNum(event)">14</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link " value="15" id="15" onclick="checkNum(event)">15</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link " value="16" id="16" onclick="checkNum(event)">16</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link " value="17" id="17" onclick="checkNum(event)">17</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link " value="18" id="18" onclick="checkNum(event)">18</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link " value="19" id="19" onclick="checkNum(event)">19</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link " value="20" id="20" onclick="checkNum(event)">20</button></div>
+         </div>
+   
+     <div class="row mx-auto text-center">
+        <div class="col px-0" ><button class="square btn  stretched-link " value="21" id="21" onclick="checkNum(event)">21</button></div>
+        <div class="col px-0" ><button class="square btn  stretched-link " value="22" id="22" onclick="checkNum(event)">22</button></div>
+        <div class="col px-0" ><button class="square btn  stretched-link " value="23" id="23" onclick="checkNum(event)">23</button></div>
+        <div class="col px-0" ><button class="square btn  stretched-link " value="24" id="24" onclick="checkNum(event)">24</button></div>
+        <div class="col px-0" ><button class="square btn  stretched-link " value="25" id="25" onclick="checkNum(event)">25</button></div>
+        <div class="col px-0" ><button class="square btn  stretched-link " value="26" id="26" onclick="checkNum(event)" >26</button></div>
+        <div class="col px-0" ><button class="square btn  stretched-link " value="27" id="27" onclick="checkNum(event)">27</button></div>
+        <div class="col px-0" ><button class="square btn  stretched-link " value="28" id="28" onclick="checkNum(event)">28</button></div>
+        <div class="col px-0" ><button class="square btn  stretched-link " value="29" id="29" onclick="checkNum(event)">29</button></div>
+        <div class="col px-0" ><button class="square btn  stretched-link " value="30" id="30" onclick="checkNum(event)">30</button></div>
+     </div>
+
+        <div class="row mx-auto text-center ">
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="31" id="31" onclick="checkNum(event)">31</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="32" id="32" onclick="checkNum(event)">32</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="33" id="33" onclick="checkNum(event)">33</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="34" id="34" onclick="checkNum(event)">34</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="35" id="35" onclick="checkNum(event)">35</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="36" id="36" onclick="checkNum(event)">36</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="37" id="37" onclick="checkNum(event)">37</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="38" id="38" onclick="checkNum(event)">38</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="39" id="39" onclick="checkNum(event)">39</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="40" id="40" onclick="checkNum(event)">40</button></div>
+        </div>
+        <div class="row mx-auto text-center">
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="41" id="41" onclick="checkNum(event)">41</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="42" id="42"onclick="checkNum(event)">42</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="43" id="43" onclick="checkNum(event)">43</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="44" id="44" onclick="checkNum(event)">44</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="45" id="45" onclick="checkNum(event)">45</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="46" id="46" onclick="checkNum(event)">46</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="47" id="47" onclick="checkNum(event)">47</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="48" id="48" onclick="checkNum(event)">48</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="49" id="49" onclick="checkNum(event)">49</button></div>
+            <div class="col px-0" ><button class="square btn  stretched-link  " value="50" id="50" onclick="checkNum(event)">50</button></div>
+         </div>
+         <div class="row mx-auto text-center ">
+            <div class="col px-0"><button class="square btn  stretched-link  " value="51" id="51" onclick="checkNum(event)">51</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="52" id="52" onclick="checkNum(event)">52</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="53" id="53" onclick="checkNum(event)">53</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="54" id="54" onclick="checkNum(event)">54</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="55" id="55" onclick="checkNum(event)">55</button></div>
+            <div class="col px-0 "><button class="square btn  stretched-link " value="56" id="56" onclick="checkNum(event)">56</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="57" id="57" onclick="checkNum(event)">57</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="58" id="58" onclick="checkNum(event)">58</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="59" id="59" onclick="checkNum(event)">59</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="60" id="60" onclick="checkNum(event)">60</button></div>
+         </div>
+         <div class="row mx-auto text-center ">
+            <div class="col px-0"><button class="square btn  stretched-link  " value="61" id="61" onclick="checkNum(event)">61</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="62" id="62" onclick="checkNum(event)">62</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="63" id="63" onclick="checkNum(event)">63</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="64" id="64" onclick="checkNum(event)">64</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="65" id="65" onclick="checkNum(event)">65</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="66" id="66" onclick="checkNum(event)">66</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="67" id="67" onclick="checkNum(event)">67</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="68" id="68" onclick="checkNum(event)">68</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="69" id="69" onclick="checkNum(event)">69</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="70" id="70" onclick="checkNum(event)">70</button></div>
+         </div>
+         <div class="row mx-auto text-center ">
+            <div class="col px-0"><button class="square btn  stretched-link  " value="71" id="71" onclick="checkNum(event)">71</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="72" id="72" onclick="checkNum(event)">72</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="73" id="73" onclick="checkNum(event)">73</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="74" id="74" onclick="checkNum(event)">74</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="75" id="75" onclick="checkNum(event)">75</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="76" id="76" onclick="checkNum(event)">76</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="77" id="77" onclick="checkNum(event)">77</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="78" id="78" onclick="checkNum(event)">78</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="79" id="79" onclick="checkNum(event)">79</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="80" id="80" onclick="checkNum(event)">80</button></div>
+         </div>
+         <div class="row mx-auto text-center ">
+            <div class="col px-0"><button class="square btn  stretched-link  " value="81" id="81" onclick="checkNum(event)">81</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="82" id="82" onclick="checkNum(event)">82</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="83" id="83" onclick="checkNum(event)">83</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="84" id="84" onclick="checkNum(event)">84</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="85" id="85" onclick="checkNum(event)">85</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="86" id="86" onclick="checkNum(event)">86</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="87" id="87" onclick="checkNum(event)">87</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="88" id="88" onclick="checkNum(event)">88</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="89" id="89" onclick="checkNum(event)">89</button></div>
+            <div class="col px-0"><button class="square btn  stretched-link  " value="90" id="90" onclick="checkNum(event)">90</button></div>
+         </div>
+      
+</div>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row mt-n5">
+                <span class="reset border-l mt-n5">
+                <img src="refresh.png" alt="" class="w-10">
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    <script src="index.js" defer></script>
+</body>
+</html>
