@@ -7,10 +7,12 @@ setTimeout(() => {
         // console.log(document.querySelectorAll('.btn'))
 
         let oldArr = JSON.parse(localStorage.getItem("numbers"));
-
-        oldArr.forEach(element => {
-            $('#'+element+'').addClass('active');
-        });
+        if(oldArr){
+            oldArr.forEach(element => {
+                $('#'+element+'').addClass('active');
+            });
+        }
+       
 }, (10));
 
 
